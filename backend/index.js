@@ -12,7 +12,13 @@ const { nextTick } = require("process");
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin: ['https://ecommerce-sigma-kohl-68.vercel.app/'],
+    methods: ['POST', 'GET'],
+    credentials: true
+  }
+));
 
 
 // Database connection with mongoDB
