@@ -1,0 +1,63 @@
+/* DescriptionBox.css */
+
+.descriptionbox {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
+  }
+  
+  .descriptionbox-navigator {
+    display: flex;
+  }
+  
+  .descriptionbox-nav-box {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .descriptionbox-nav-box.fade {
+    color: #888;
+    background-color: #eee;
+  }
+  
+  .descriptionbox-nav-box:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .descriptionbox-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .descriptionbox-description p {
+    margin-bottom: 15px;
+  }
+  
+  p{
+    font-weight: 600;
+  }
+  
+  @media(max-width:1280px){
+    .descriptionbox{
+      margin: 60px;
+    }
+  }
+
+  @media(max-width:800px){
+    .descriptionbox{
+      margin: 60px 20px;
+    }
+    .descriptionbox-description{
+      font-size: 14px;
+    }
+  }
+
